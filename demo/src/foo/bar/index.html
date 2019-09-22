@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo inject-env-browser-run</title>
+		<style>
+			* {
+				box-sizing: inherit;
+			}
+
+			html, body {
+				height: 100%;
+			}
+
+			html {
+				tab-size: 2;
+				font-size: 250%;
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				padding: 20px;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			pre {
+				margin: 0;
+
+				white-space: pre-wrap;
+				word-break: break-all;
+			}
+		</style>
+		<script type="text/javascript" src="env-config.js"></script>
+	</head>
+	<body>
+		<pre id="env"></pre>
+		<script type="text/javascript">
+			const stringVars = JSON.stringify(window._env_, null, '\t');
+			const preEle = document.getElementById('env');
+
+			preEle.textContent = stringVars;
+		</script>
+	</body>
+</html>

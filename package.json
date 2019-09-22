@@ -1,0 +1,40 @@
+{
+	"name": "inject-env-browser-run",
+	"version": "0.0.0",
+	"description": "It injects environment variables into your browser index.html",
+	"license": "MIT",
+	"repository": "saadshahd/inject-env-browser-run",
+	"author": {
+		"name": "Saad Shahd",
+		"email": "dev.saad.shahd@gmail.com",
+		"url": "https://xturbine.io"
+	},
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "xo"
+	},
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"keywords": [
+		"runtime",
+		"environment",
+		"variables",
+		"docker",
+		"browser",
+		"no build",
+		"inject"
+	],
+	"dependencies": {
+		"cosmiconfig": "^5.2.1",
+		"del": "^5.1.0",
+		"meow": "^5.0.0"
+	},
+	"devDependencies": {
+		"xo": "^0.24.0"
+	}
+}

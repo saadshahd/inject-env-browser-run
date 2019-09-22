@@ -1,0 +1,12 @@
+{
+	"inject-env-browser-run": {
+		"required": [
+			"HOST",
+			"BLOG_HOST",
+			"DEBUG_LEVEL",
+			"APP_TITLE",
+			"USER",
+			"HOME"
+		]
+	}
+}
