@@ -25,16 +25,16 @@ Check the `demo/` folder for more guidance.
 
 ## Config
 You have to define a list of the `required` variables.
-```
+```json
 In package.json
 
 "inject-env-browser-run": {
-	"required": [
-		"HOST",
-		"BLOG_HOST",
-		"DEBUG_LEVEL",
-		"APP_TITLE"
-	]
+  "required": [
+    "HOST",
+    "BLOG_HOST",
+    "DEBUG_LEVEL",
+    "APP_TITLE"
+  ]
 }
 ```
 
