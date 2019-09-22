@@ -6,7 +6,7 @@ const cosmiconfig = require('cosmiconfig');
 
 const explorer = cosmiconfig('inject-env-browser-run');
 
-module.exports = async dest => {
+module.exports = async (dest, {dotenv} = {dotenv: false}) => {
 	const file = `${dest}/env-config.js`;
 	const [, result] = await Promise.all([
 		del([file]),
@@ -19,7 +19,8 @@ module.exports = async dest => {
 
 	const {config} = result;
 	const {required} = config;
-	const mapSysEnvReducer = (obj, varName) => ({...obj, [varName]: process.env[varName]});
+	const envSource = dotenv ? require('dotenv').config().parsed : process.env;
+	const mapSysEnvReducer = (obj, varName) => ({...obj, [varName]: envSource[varName]});
 	const envObj = required.reduce(mapSysEnvReducer, {});
 	const content = `window._env_ = ${JSON.stringify(envObj, null, '  ')}`;
 
