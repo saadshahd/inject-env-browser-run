@@ -7,4 +7,4 @@ RUN npm install -g inject-env-browser-run
 
 EXPOSE 5000
 
-CMD ["inject-env-browser-run && serve"]
+CMD ["inject-env-browser-run --dest src/foo/bar && serve"]

@@ -11,7 +11,7 @@ const cli = meow(`
 	  --dest  the destination where the env-config file will be created [Required]
 
 	Examples
-	  $ inject-env-browser-run --dest=src/foo/bar
+	  $ inject-env-browser-run --dest src/foo/bar
 		creates an \`env-config.js\` file in the path src/foo/bar
 `);
 
