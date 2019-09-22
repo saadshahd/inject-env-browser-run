@@ -1,4 +1,5 @@
 window._env_ = {
-  "USER": "saadshahd",
-  "HOME": "/home/saadshahd"
+  "HOST": "example.com",
+  "BLOG_HOST": "blog.com",
+  "APP_TITLE": "hola hola"
 }
