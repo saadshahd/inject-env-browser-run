@@ -16,7 +16,7 @@
 	"scripts": {
 		"test": "xo",
 		"deploy": "np",
-		"postdeploy": "gh-pages -d=demo/src/foo/bar"
+		"postdeploy": "gh-pages -d demo/src/foo/bar"
 	},
 	"files": [
 		"index.js",
