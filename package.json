@@ -1,6 +1,6 @@
 {
 	"name": "inject-env-browser-run",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "It injects environment variables into your browser index.html",
 	"license": "MIT",
 	"repository": "saadshahd/inject-env-browser-run",
