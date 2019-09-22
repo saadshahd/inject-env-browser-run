@@ -1,6 +1,6 @@
 {
 	"name": "inject-env-browser-run",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "It injects environment variables into your browser index.html",
 	"license": "MIT",
 	"repository": "saadshahd/inject-env-browser-run",
@@ -14,7 +14,9 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"test": "xo"
+		"test": "xo",
+		"deploy": "np",
+		"postdeploy": "bs --directory=demo/foo/bar --branch=gh-pages"
 	},
 	"files": [
 		"index.js",
